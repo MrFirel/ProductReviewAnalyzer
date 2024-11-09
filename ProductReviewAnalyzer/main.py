@@ -80,8 +80,7 @@ def main():
         print("\nTabela de Resultados:\n")
         print(df.to_string(index=False))
 
-        # Opcional: Salvar os resultados em um arquivo CSV
-        # df.to_csv('resultados_analise.csv', index=False)
+        df.to_csv('resultados_analise.csv', index=False, encoding='utf-8-sig')
 
         # Exibir uma contagem de sentimentos
         print("\nContagem de Sentimentos Preditos (Naive Bayes):")
